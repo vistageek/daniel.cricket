@@ -10,6 +10,18 @@
         border: 0px;
     }
     
+    pre {
+        margin: 2em;
+    }
+    
+    pre.title {
+        color:#881280;
+    }
+    
+    pre.time {
+        color:#236E25;
+    }
+    
     @media screen and (max-width: 480px) {
         pre {
             font-size: 2em;
@@ -50,8 +62,8 @@
 
 <body onload="time()">
     <center>
-        <pre style="color:#881280;">daniel.cricket</pre>
-        <pre style="color:#236E25;" id="t"></pre>
+        <pre class="title">daniel.cricket</pre>
+        <pre class="time" id="t"></pre>
     </center>
 </body>
 
