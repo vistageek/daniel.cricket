@@ -3,6 +3,20 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+    
+    @media screen and (max-width: 480px) {
+        pre {
+            font-size: 2em;
+        }
+    }
+</style>
+
 <script>
     function time() {
         var today = new Date();
@@ -24,14 +38,14 @@
    
         document.getElementById('t').innerHTML = h + ":" + m + ":" + s + " " + amPM;
         var t = setTimeout(time, 500);
-}
+    }
 
-function check(i) {
-    if (i < 10) {
-        i = "0" + i
-    };
-    return i;
-}
+    function check(i) {
+        if (i < 10) {
+            i = "0" + i
+        };
+        return i;
+    }
 </script>
 
 <body onload="time()">
