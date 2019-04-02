@@ -13,10 +13,6 @@
 </script>
 
 <script>
-document.body.onload {
-  function(){ time(); }
-}
-
 function time() {
   var today = new Date();
   var h = today.getHours();
@@ -48,7 +44,7 @@ function check(i) {
 </script>
 <head>
 
-<body>
+<body onload="time();">
   <div class="pos">
     <pre class="title">daniel.cricket</pre>
     <pre class="time" id="t"></pre>
