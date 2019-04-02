@@ -22,7 +22,7 @@ pre.time {
   color:#236E25;
 }
 
-#pos {
+.pos {
   left: 50%;
   top: 40%;
   position: absolute;
