@@ -28,4 +28,5 @@ pre.time {
   position: absolute;
   transform: translate(-50%, -40%);
   -webkit-transform: translate(-50%, -40%);
+  text-align: center;
 }
