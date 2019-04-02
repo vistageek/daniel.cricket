@@ -1,46 +1,9 @@
 <html>
 
+<head>
 <link rel="stylesheet" href="style.css" />
 <link rel="shortcut icon" href="favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<script>
-    function time() {
-        var today = new Date();
-        var h = today.getHours();
-        var m = today.getMinutes();
-        var s = today.getSeconds();
-        var amPM;
-   
-        m = check(m);
-        s = check(s);
-   
-        amPM = (h >= 12)? 'pm' : 'am';
-   
-        if(h > 12) {
-            h -= 12;
-        } else if (h == 0) {
-            h = 12; 
-        }
-   
-        document.getElementById('t').innerHTML = h + ":" + m + ":" + s + " " + amPM;
-        var t = setTimeout(time, 500);
-    }
-    function check(i) {
-        if (i < 10) {
-            i = "0" + i
-        };
-        return i;
-    }
-</script>
-
-<body onload="time()">
-    <center id="pos">
-        <pre class="title">daniel.cricket</pre>
-        <pre class="time" id="t"></pre>
-    </center>
-</body>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120448008-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -48,5 +11,48 @@
   gtag('js', new Date());
   gtag('config', 'UA-120448008-1');
 </script>
+
+<script>
+document.body.onload {
+  function(){ time(); }
+}
+
+function time() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var amPM;
+
+  m = check(m);
+  s = check(s);
+
+  amPM = (h >= 12)? 'pm' : 'am';
+
+  if(h > 12) {
+    h -= 12;
+  } else if (h == 0) {
+    h = 12; 
+  }
+
+  document.getElementById('t').innerHTML = h + ":" + m + ":" + s + " " + amPM;
+  var t = setTimeout(time, 500);
+}
+
+function check(i) {
+  if (i < 10) {
+    i = "0" + i
+  };
+  return i;
+}
+</script>
+<head>
+
+<body>
+  <div class="pos">
+    <pre class="title">daniel.cricket</pre>
+    <pre class="time" id="t"></pre>
+  </div>
+</body>
 
 </html>
