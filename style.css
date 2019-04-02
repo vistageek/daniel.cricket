@@ -1,33 +1,31 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
     
 pre {
-    margin: 1em;
+  margin: 1em;
 }
 
 @media screen and (max-width: 480px) {
-    pre {
-        font-size: 2em;
-    }
+  pre {
+    font-size: 2em;
+  }
 }
     
 pre.title {
-    color:#881280;
+  color:#881280;
 }
     
 pre.time {
-    color:#236E25;
+  color:#236E25;
 }
 
 #pos {
-    left: 50%;
-    top: 40%;
-    position: absolute;
-    transform: translate(-50%, -40%);
-    -webkit-transform: translate(-50%, -40%);
-    -moz-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
+  left: 50%;
+  top: 40%;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -40%);
 }
