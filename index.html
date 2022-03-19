@@ -20,19 +20,17 @@ function time() {
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
-  var amPM;
-
+  var amPM = (h >= 12) ? "pm" : "am";
+  
   m = check(m);
   s = check(s);
-
-  amPM = (h >= 12)? "pm" : "am";
-
+  
   if(h > 12) {
     h -= 12;
   } else if (h == 0) {
-    h = 12; 
+    h = 12;
   }
-
+  
   document.getElementById('t').innerHTML = h + ":" + m + ":" + s + " " + amPM;
   var t = setTimeout(time, 500);
 }
